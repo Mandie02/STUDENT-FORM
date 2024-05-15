@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Form</title>
+    <link rel="stylesheet" href="src/style/student_form.css">
+    <link rel="shortcut icon" href="src/img/Lagro.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <img src="src/img/Lagro.jpg" alt="LAGRO LOGO" width="115px">
+        <h1>LAGRO HIGH SCHOOL</h1>
+    </div>
+    <form action="src/Pages/POST.php" method="POST">
+        <div class="title">
+            <h1>STUDENT RECORD FORM</h1>
+        </div>
+        <table>
+            <tr>
+                <td><label for="studentID">Student ID: </label></td>
+                <td><input type="number" name="studentId" id="studentID" class="inp" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="student_name">Student Full Name: </label></td>
+                <td><input type="text" name="studentName" id="student_name" class="inp" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="grade">Grade & Section: </label></td>
+                <td><input type="text" name="gradeandsection" id="grade" class="inp" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address: </label></td>
+                <td><textarea name="address" id="address" cols="25" rows="2" class="inp" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="contact">Contact No: </label></td>
+                <td><input type="number" name="contact" id="contact" class="inp" required></td>
+            </tr>
+        </table>
+        <div class="button_container">
+            <input type="submit" value="Submit" class="btn" id="submitBtn">
+            <input type="reset" value="Reset" class="btn" id="resetBtn">
+        </div>
+    </form>
+
+    <script src="src/config/input.js"></script>
+</body>
+</html>
