@@ -25,31 +25,31 @@
             <div class="title">
                 <h1>STUDENT RECORD</h1>
             </div>
-        </div>
-        
-        <div class="searchbar">
-            <input type="text">
-            <button type="submit" class="submit_btn" name="search">Search</button>
+
+            <div class="search-bar">
+                <input type="text" name="search" id="searchBar">
+                <input type="button" value="Search" id="search-btn">
+            </div>
         </div>
 
         <table>
-            <tr>
-                <td><h2>STUDENT ID</h2></td>
-                <td><h2>NAME</h2></td>
-                <td><h2>Grade & Section</h2></td>
-                <td><h2>Address</h2></td>
-                <td><h2>Contact No.</h2></td>
+            <tr class="table-name">
+                <td><h4>STUDENT ID</h4></td>
+                <td><h4>NAME</h4></td>
+                <td><h4>Grade & Section</h4></td>
+                <td><h4>Address</h4></td>
+                <td><h4>Contact No.</h4></td>
             </tr>
             
                 <?php
                     while($row = mysqli_fetch_assoc($result)){
                 ?>
             <tr> 
-                <td><h3><?php echo "{$row['StudentId']}"?></h3></td>
-                <td><h3><?php echo "{$row['name']}"?></h3></td>
-                <td><h3><?php echo "{$row['gradeSection']}"?></h3></td>
-                <td><h3><?php echo "{$row['address']}"?></h3></td>
-                <td><h3><?php echo "{$row['contact']}"?></h3></td>
+                <td><h5><?php echo "{$row['StudentId']}"?></h5></td>
+                <td><h5><?php echo "{$row['name']}"?></h5></td>
+                <td><h5><?php echo "{$row['gradeSection']}"?></h5></td>
+                <td><h5><?php echo "{$row['address']}"?></h5></td>
+                <td><h5><?php echo "{$row['contact']}"?></h5></td>
             </tr>
                 <?php
                     }

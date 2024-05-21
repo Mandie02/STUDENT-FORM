@@ -75,6 +75,7 @@
         <h4 id="msg">Your record will be added.</h4>
     </div>
     <div class="btn">
+        <button><a href="/student_form.html">Return</a></button>
         <button><a href="../config/student_record.php">View Record</a></button>
     </div>
 </body>
